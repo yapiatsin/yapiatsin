@@ -1,0 +1,45 @@
+{% extends "admin_pages/Base_admin.html" %}
+{% block title %}Add Car Marque {% endblock %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div class="container-fluid" style="backdrop-filter: blur(50px) ;" >
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-500">Form</h1>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-2 ">
+            <h6 class="m-0 font-weight-bold text-primary">
+                Véhicule Marque
+            
+            <div class="small" style="float: right;">
+                <a title="retour" href="{% url 'liste_véhi_list' %}">
+                    <i style="color: rgb(20, 20, 255);" class="fa fa-arrow-left fa-sm">Retour</i>   
+                </a>
+            </div>
+            
+        </h6>   
+            </div>
+                <div class="card-body" >
+                    <div class="form-responsive" > 
+                        <form action="" method="post" enctype="multipart/form-data" >
+                            <br>
+                            {% csrf_token %}
+                            {{ form.media }} 
+                            {{ form.as_p }}
+                            <center><p></p>
+                                <br>
+                                <button type="submit" class="btn btn-outline-primary w-60 col-md-16">Save</button>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+
+{% endblock %}

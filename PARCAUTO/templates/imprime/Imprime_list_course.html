@@ -1,0 +1,37 @@
+{% extends "admin_pages/Base_admin.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container-fluid" style="backdrop-filter: blur(50px) ;">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-500">Fiche</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-2 ">
+            <h6 class="m-0 font-weight-bold text-primary">
+               Fiche Course 
+            <div class="small" style="float: right;">
+                <a href="{% url 'tab-course' %}" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm">
+                    <i class="fa fa-arrow-left text-white-50"></i>
+                     Annuler
+                </a>
+                <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <i class="fa fa-download fa-sm text-white-50"></i>
+                    "Imprimer"
+                </a> 
+            </div>
+        </h6>   
+        </div>
+        <div class="card-body" >
+            <div class="form-responsive" style="height: 400px;"> 
+
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

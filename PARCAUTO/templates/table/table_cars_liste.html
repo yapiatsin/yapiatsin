@@ -1,0 +1,82 @@
+{% extends "admin_pages/Base_admin.html" %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-500">Tables</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-2 ">
+            <h6 class="m-0 font-weight-bold text-primary">
+                Véhicule
+                
+            <div style="float: right;">
+                <a href="{% url 'add_car' %}" class="btn btn-primary"><span>Add Car</span></a>
+            </div>
+        </h6>   
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+               
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: rgb(21, 55, 83);color: rgb(181, 218, 249);">
+                            <th>Immatriculation</th>
+                            <th>Marque</th>
+                            <th>Couleur</th>
+                            <th>Serie</th> 
+                            <th>Prix</th> 
+                            <th>Date Enregistrement</th> 
+                            <th>Action</th> 
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        
+                        <tr style="background-color: rgb(21, 55, 83);color: rgb(181, 218, 249);">
+                            
+                            
+                            <th>  </th>
+                            <th>  </th>
+                            <th>  </th>
+                            <th>  </th>
+                            <th>  </th>
+                            <th>  </th>
+                            <th>  </th>
+
+                    </tfoot>
+                    <tbody>
+                        {% for vehicule in object_list %}  
+                        <tr>
+                            <th style="color: rgb(6, 126, 223);" scope="row"><a style="color: rgb(0, 115, 255);" class="text-center" href="">{{ vehicule.immatriculation }}</a> </th>
+
+                                <td> {{vehicule.marque}} </td>
+                                <td>{{ vehicule.couleur }}</td>
+                                <td>{{ vehicule.num_serie }}</td>
+                                <td>{{ vehicule.prix}}</td>
+                               
+                                
+                                <td>{{ vehicule.vehi_enregistre_date }}</td>
+
+                                <td class="text-center" style="color: antiquewhite; font-size: 4px;">
+                                    <a href="{% url 'update_car' vehicule.pk %}" class="btn btn-warning" title="Edit" data-toggle="tooltip"><i><img src="{% static 'image/pen.svg' %}"></i></a>
+                                    <a href="#" class="btn btn-danger" title="Delete" data-toggle="tooltip"><i><img src="{% static 'image/archive.svg' %}"></i></a>
+                                </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
+
+
+
+

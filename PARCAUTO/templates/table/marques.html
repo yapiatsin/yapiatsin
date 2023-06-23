@@ -1,0 +1,19 @@
+{% extends "admin_pages/Base_admin.html" %}
+{% block title %}Car Marque {% endblock %}
+{% load static %}
+
+
+{% block content %}
+   
+    <h1>{{cats}}...</h1> 
+{% for vehicule in marque_vehicule %}
+    {{ vehicule.marque }}
+    {{ vehicule.immatriculation }}
+    {{ vehicule.color }}
+
+    {{vehicule.marque}} 
+    {{ vehicule.couleur }}
+    {{ vehicule.num_serie }}
+{% endfor %}
+
+{% endblock %}

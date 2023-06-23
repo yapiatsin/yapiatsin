@@ -1,0 +1,42 @@
+{% extends "admin_pages/Base_admin.html" %}
+{% block title %} Liste image Vehicule {% endblock %}
+
+{% load static %}
+
+<!--style="background: linear-gradient(to right, #ffd489, #ffffff, #daf6bb)-->
+
+{% block content %}
+<div class="container-fluid" style="width: 450px;">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-500">Tables</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-2 ">
+            <h6 class="m-2 font-weight-bold text-primary">
+                Marque
+             
+            <div style="float: right;">
+                <a href="{% url 'add_car_marque' %}" >Add Marque</a>
+            </div>
+        </h6>   
+        </div>
+        
+            <div class="table-responsive"><br>
+                {% for marque in marq_menu_list %}
+                    <div class="text-center">
+                        <div class="col-lg-12">
+                            <a class="dropdown" href="">
+                                {% if marque.logo %}
+                                    <img src="{{ marque.logo.url }}" style="height: 40px; width: 40px;"><br>
+                                {% else %}
+                                    <h4>Logo</h4>
+                                {% endif %}
+                                {{marque.marque}}<br><br>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+    </div>
+</div>
+{% endblock %}

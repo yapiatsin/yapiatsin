@@ -1,0 +1,85 @@
+body {
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    
+}
+.table-responsive {
+    margin: 30px 0;
+}
+.table-wrapper {
+    min-width: 900px;
+    background: transparent;
+    padding: 20px;  
+    border-radius: 20px;      
+    box-shadow: 0 1px 1px rgba(8, 3, 77, 0.5);
+}
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+.table-title h2 {
+    margin: 8px 0 0;
+    font-size: 22px;
+    font-size: 14px;
+}
+.search-box {
+    position: relative;        
+    float: right;
+}
+.search-box input {
+    height: 30px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border-color: #c5c2c2;
+    box-shadow: none;
+    width: 250px;
+    color: #3f3f3f;
+}
+.search-box input:focus {
+    border-color: transparent;
+}
+.search-box .btn {
+    color: #ffffff;
+    position: absolute;
+    font-size: 19px;
+    top: -1px;
+    left: 189px;
+    font-size: 12px;
+}
+
+.btn{
+    font-size: 10px;
+}
+
+table.table tr th, table.table tr td {
+    border-color:transparent;
+    
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+table.table th img {
+    font-size: 13px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+table.table td:last-child {
+    width: 90px;
+}
+table.table td a {
+    color: #b3b3b3;
+    display: inline-block;
+    margin: 0px;
+}
+table.table td i {
+    font-size: 19px;
+}    
+
+tbody td a{
+   padding: 0 3px;
+}
+   

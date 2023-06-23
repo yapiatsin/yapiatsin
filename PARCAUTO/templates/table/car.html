@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HVAC Template">
+    <meta name="keywords" content="HVAC, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PARC AUTO</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!----------------->
+    <link href="{% static 'vendor_admin/fontawesome-free/css/all.min.css' %}  " rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href=" {% static 'css_admin/sb-admin-2.min.css' %} " rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="{% static 'vendor_admin/datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styless.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknave.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <!----------------->
+
+    <!-- Css Styles 
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknave.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styless.css' %}" type="text/css">-->
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__widget">
+            <a href="#"><i class="fa fa-cart-plus"></i></a>
+            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="#" class="primary-btn">Add Car</a>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src=" img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget__add">
+            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+        </ul>
+        <div class="offcanvas__phone__num">
+            <i class="fa fa-phone"></i>
+            <span>(+12) 345 678 910</span>
+        </div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+
+    <!-- Car Section Begin -->
+    <section class="car spad">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12">
+                    
+                    <div class="row">
+                        
+                        
+                        
+                        <div class="col-lg-3 col-md-3">
+                            <div class="car__item">
+                                <div class="car__item__pic__slider owl-carousel">
+                                    <img src="{% static 'img/cars/car-7.jpg' %}" alt="">
+                                    <img src="{% static 'img/cars/car-1.jpg' %} " alt="">
+                                </div>
+                                <div class="car__item__text">
+                                    <div class="car__item__text__inner">
+                                        <div class="label-date">2020</div>
+                                        
+                                        <h5 style="font-size: 11px;"><a href="#">Lamborghini huracan evo</a></h5>
+                                        <ul >
+                                            <li style="font-size: 8px;"><span>35,000</span> mi</li>
+                                            <li style="font-size: 8px;">Auto</li>
+                                            <li style="font-size: 8px;"><span>700</span> hp</li>
+                                        </ul>
+                                    </div>
+                                    
+                                        
+                                        <button  class="btn-primary"><div class="small"><h6>$120,000</h6></div></button>
+                                        
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="car__item">
+                                <div class="car__item__pic__slider owl-carousel">
+                                    <img src="{% static 'img/cars/car-7.jpg' %}" alt="">
+                                    <img src="{% static 'img/cars/car-1.jpg' %} " alt="">
+                                </div>
+                                <div class="car__item__text">
+                                    <div class="car__item__text__inner">
+                                        <div class="label-date">2020</div>
+                                        <h5 style="font-size: 11px;"><a href="#">Lamborghini huracan evo</a></h5>
+                                        <ul >
+                                            <li style="font-size: 8px;"><span>35,000</span> mi</li>
+                                            <li style="font-size: 8px;">Auto</li>
+                                            <li style="font-size: 8px;"><span>700</span> hp</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="small"><h6>$120,000</h6></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="car__item">
+                                <div class="car__item__pic__slider owl-carousel">
+                                    <img src="{% static 'img/cars/car-7.jpg' %}" alt="">
+                                </div>
+                                <div class="car__item__text">
+                                    <div class="car__item__text__inner">
+                                        <div class="label-date">2020</div>
+                                        <h5 style="font-size: 11px;"><a href="#">Lamborghini huracan evo</a></h5>
+                                        <ul >
+                                            <li style="font-size: 8px;"><span>35,000</span> mi</li>
+                                            <li style="font-size: 8px;">Auto</li>
+                                            <li style="font-size: 8px;"><span>700</span> hp</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="small"><h6>$120,000</h6></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="car__item">
+                                <div class="car__item__pic__slider owl-carousel">
+                                    <img src="{% static 'img/cars/car-7.jpg' %}" alt="">
+                                </div>
+                                <div class="car__item__text">
+                                    <div class="car__item__text__inner">
+                                        <div class="label-date">2020</div>
+                                        <h5 style="font-size: 11px;"><a href="#">Lamborghini huracan evo</a></h5>
+                                        <ul >
+                                            <li style="font-size: 8px;"><span>35,000</span> mi</li>
+                                            <li style="font-size: 8px;">Auto</li>
+                                            <li style="font-size: 8px;"><span>700</span> hp</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="small"><h6>$120,000</h6></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Car Section End 
+    <div class="pagination__option">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><span class="arrow_carrot-2right"></span></a>
+                    </div>-->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %} "></script>
+    <!------------------------------------------->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'vendor_admin/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor_admin/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{% static 'vendor_admin/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="{% static 'js_admin/sb-admin-2.min.js' %}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{% static 'vendor_admin/datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'vendor_admin/datatables/dataTables.bootstrap4.min.js' %}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{% static 'js_admin/demo/datatables-demo.js' %}"></script>
+</body>
+    
+
+</html>

@@ -1,0 +1,67 @@
+{% extends "admin_pages/Base_admin.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-500">Tables</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-2 ">
+            <h6 class="m-0 font-weight-bold text-primary">
+                User
+             
+            <div style="float: right;">
+                <a href="{% url 'Admin-register' %}" class="btn btn-primary"><span>Add New User</span></a>
+                <a href="{% url 'Imprime-proj' %}" class="btn btn-secondary"><span>Export to PDF</span></a>
+            </div>
+        </h6>   
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr style="background-color: rgb(21, 55, 83);color: rgb(181, 218, 249);">
+                            <th>Statut</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Profession</th>
+                            <th>Action</th> 
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr style="background-color: rgb(21, 55, 83);color: rgb(181, 218, 249);">
+                            
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th> 
+                            <th></th> 
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <!--
+                                <tr>
+                                    <th style="color: rgb(21, 55, 83);" scope="row"></th>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    <td style="color: antiquewhite;">
+                                        <a href="#" class="view" title="View" data-toggle="tooltip"><i><img src="{% static 'image/eye.svg' %}"></i></a>
+                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i><img src="{% static 'image/pen.svg' %}"></i></a>
+                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i><img src="{% static 'image/archive.svg' %}"></i></a>
+                                    </td>
+                                </tr>
+                            -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
